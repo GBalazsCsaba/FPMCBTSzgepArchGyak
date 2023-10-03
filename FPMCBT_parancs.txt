@@ -1,0 +1,12 @@
+passwd
+man system
+pwd
+w
+last -5
+who -q
+finger
+
+man date
+
+kill
+clear
