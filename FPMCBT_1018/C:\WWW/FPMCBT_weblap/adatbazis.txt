@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="hu">
+
+    <head>
+
+        <title> Weblap keszitese </title>
+
+        <meta contetn="txt/html; charset=UTF-8">
+
+    </head>
+
+    <body style="background:transparent; color:white; font-size:10pt; font-family:tahoma">
+
+            <br><br><br>
+
+        <img scr"kepek/adatbazis.png" height="200" border="0" alt=""" style="float:right">
+
+        <font style="font-size:16pt"><b>Adatbazisrendszerek</b></font>
+
+        <br><br>
+
+        <b>Tematika</b>
+
+        <ul>
+
+            <li>Az adatbazis-kezelo feladata
+
+            <li>Az adatbazis objektumai
+
+            <li>Adatbazis kezelo rendszerek
+
+            <li>Az adattablak kezelese, kulcs fogalma
+
+            <li>Rekordok felvitele, modositasa, torlese
+
+            <li>Statisztikai szamitasok a tablan
+
+            <li>Kereses: automatikus, specialis szures urlap szerint
+
+            <li>Lekerdezesek: valaszto, torlo, frissito stb.
+
+            <li>Adattablak letrehozasa es osszekapcsolasa
+
+            <li>Tablak feltoltese
+
+            <li>Urlapok keszitese
+
+            <li>Jelentes keszitese
+
+        </ul>
+
+    </body>
+
+</html>
