@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+    <head>
+        <title>Audio lejatszasa</title>
+
+        <meta charset="UTF-8">
+
+        <style>
+            article, section, aside, nav, header, footer{
+                display: block;
+            }
+
+            .fejlec{
+                font-size: 18pt;
+                font-family: Helvetica;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .lablec{
+                width: 560px;
+                font-size: 10pt;
+                margin-top: 40px;
+                border-top: 3px #888888 double;
+                padding-top: 30px;
+                text-align: left;
+                font-family: Helvetica;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="fejlec" class="fejlec">
+            Audio (zene, hang) lejatszasa
+        </header>
+
+        <section id="tartalom">
+            <audio id="zene" controls style="width: 800px;">
+                <source src="zene/jazzy.mp3" type="audio/mpeg" />
+                A bongeszod nem tamogatja a HTML audio lejatszasat.
+            </audio>
+
+            <br><br><br>
+
+            <button onClick="playPause()">lejatszas/szunet</button>
+            &nbsp;&nbsp;&nbsp;
+            <button onClick="effektem.src='effect/yes.mp3';effektem.play()">pozitiv</button>
+            <button onClick="effektem.src='effect/no.mp3';effektem.play()">negativ</button>
+
+            <br /><br />
+
+            &nbsp;&nbsp;&nbsp;
+
+            <button onClick="zenem.playbackRate=0.2">nagyon lassu</button>
+            <button onClick="zenem.playbackRate=0.5">lassu</button>
+            <button onClick="zenem.playbackRate=1">normal</button>
+            <button onClick="zenem.playbackRate=2">gyors</button>
+            <button onClick="zenem.playbackRate=4">nagyon gyors</button>
+
+            <br /><br />
+
+            <button onClick="alert(zenem.ended)">befejezodott-e</button>
+            <button onClick="alert(zenem.duration)">audio hossza (mp)</button>
+            <button onClick="alert(zenem.currentTime)">jelenlegi pozicio</button>
+            <button onClick="zenem.currentTime=90">ugras masfel perchez</button>
+        </section>
+
+        <footer id="lablec" class="lablec">
+            Forras:
+            <a herf="https://www.w3schools.com/html/html5_audio.asp" target="ujablak">
+                https://www.w3schools.com/html/html5_audio.asp
+            </a>
+        </footer>
+
+        <script>
+            var zenem=document.getElementById("zene");
+            var effektem=document.getElementById("effektem");
+
+            zenem.onenden=function(){
+                alert("VÉGE");
+            }
+
+            function playPause(){
+                if (zenem.paused){
+                    zenem.play();
+                }
+                else{
+                    zenem.pause();
+                }
+            }
+        </script>
+    </body>
+</html>
