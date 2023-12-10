@@ -1,0 +1,12 @@
+passwd
+man system
+pwd
+w
+last -n 5
+who -H
+who -u
+write (felhasznalonev)
+man date
+date +%Y
+Ctrl+c
+clear
